@@ -10,6 +10,7 @@ Projects done so far :
 
 
 1. Photowall/PhotoGram  : Using React.JS  
+
         - An instagram like web app to post pictures. 
         
         - Option to upload photo from link.
