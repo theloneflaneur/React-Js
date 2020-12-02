@@ -9,7 +9,7 @@ The repository consists of my projects relating to web development. I am skilled
 Projects done so far : 
 
 
-1. Photowall/PhotoGram  : Using React.JS  
+1. Photowall/PhotoGram  : Using React.JS  ( Dec 2nd, 2020 )
 
         - An instagram like web app to post pictures. 
         
