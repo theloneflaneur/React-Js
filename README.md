@@ -15,9 +15,13 @@ Projects done so far :
         
         - Option to upload photo from link.
         
+        -Option to delete photos form the wall. 
+        
         - Option to provide relevant captions.
         
         - Worked with React components and State management. 
         
         - Used React Router to navigate between the photoWall page and image upload page.
+        
+        
         
