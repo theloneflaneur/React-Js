@@ -6,6 +6,4 @@ Users can add a new image simply by clicking '+' icon at the  top of the page an
 enter the photo link ( URL ) and a caption of their choice. Once the user clicks 'post', they are redirected to their homepage where they can see their updated wall. 
 
 
-
-Src : Source files 
 Screenshots : Screenshots of all the pages 
