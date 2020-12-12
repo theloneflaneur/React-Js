@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset = 'UTF-8'>
+    <title> EasyMoney </title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <!---Bootstrap CDN--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <!--- Jquery Api --->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!---bootstrap JSAPI --->     
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!---font awesome--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+     <!---Stylesheet --->
+     <link rel="stylesheet" href = "./static/stylesheet.css">
+     <!---favicon--->
+     <link rel="shortcut icon" href="./static/icons/favicon.svg">
+     <!---font Nunito sans googleFonts --->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+  </head>
+
+  
+  <body>
+    <header>
+      <div class = "container-top">
+        <h1> EasyMoney </h1>
+        <nav class="navbar navbar-expand-md ">
+          <!---Nav on left --->
+          <nav class="nav justify-content-left">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personal</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link active"  href = "#about">About</a>
+            </li>
+          </nav>
+
+          <!---nav contents on the right--->
+          <nav class = "navbar-nav ml-auto">
+            <!---Login Sign up button--->
+            <button class = "btn btn-primary" id = "user-account"> Log in / Sign up
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+            </button>
+          </nav>
+        </nav>  
+        
+        <div class= "text-container">
+          <p> Accept or make payments with the security of EasyMoney. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  eiusmod
+             tempor incididunt ut labore et dolore </p>
+        </div>
+      </div>
+      <div class = "wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,165.3C384,192,480,224,576,229.3C672,235,768,213,864,218.7C960,224,1056,256,1152,250.7C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div>
+    </header>
+          
+    <div class = "content-container container">
+      <!---create a wave at the end of the container-top --->
+      <div class = "content-container-mid">
+        <!---typewriter effect for plans --->
+        <p id = "Type"></p>
+        <script language="Javascript">
+          var i = 0;
+          var txt = "Plans tailored just for you";
+          (function typeWriter(){
+            if (i < txt.length){
+              document.getElementById("Type").innerHTML += txt.charAt(i);
+              i++;
+            }
+            setTimeout(typeWriter, 200);
+          }());
+        </script>
+            
+        <div class = "row" id= "cards">
+          <!---card 1--->
+          <div class="col-sm-3" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1579227114400-4752dc0a7506?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Trial pack">
+            <div class="card-body">
+              <h5 class="card-title">Trial</h5>
+              <p class="card-text">Try EasyMoney for 7 days for free</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+          
+          <!---card 2 --->
+          <div class="col-sm-3" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="Personal pack for small businesses">
+            <div class="card-body">
+              <h5 class="card-title">Personal</h5>
+              <p class="card-text"> Ideal for idividuals and small businesses</p>
+            </div>
+            
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+
+          <!---card 3 --->
+          <div class="col-sm-3" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80" class="card-img-top" alt="EasyMoneyPlus for businesses">
+            <div class="card-body">
+              <h5 class="card-title">Unlimited Plus</h5>
+              <p class="card-text">Ideal for enterprises and large firms</p>
+            </div>
+          
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--- end of cards ---> 
+    </div> <!---end of  content-container-mid--->
+
+    <div class="promo_content container">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron why-us">
+            <h1 class="display-4">Why Us?</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="flip-card benefits">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="display-5 align-middle">Benefits</h1>
+              </div>
+              <div class="flip-card-back">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="loyalty flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="display-5 align-middle">Loyalty Bonus</h1>
+              </div>
+              <div class="flip-card-back">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---footer--->
+    <footer>
+      <div class="container" >
+        <div class = "row">
+          <div class="col-md-6">
+            <h3>Follow us</h3>
+            <ul class ="social">
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            
+            <!-- End Social link -->
+            <ul class ="footer-links">
+              <li>
+                <a href="#">Career</a>
+              </li>
+              <li>
+                <a href= "#">Contact Us</a>
+              </li>
+              <li>
+                <a href= "#">Partners</a>
+              </li>
+              <li>
+                <a  href ="#">Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>EasyMoney</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <br>
+        EasyMoney &#169; 2020. All rights reserved. 
+      </div>
+      
+    </footer>
+  </body>
+</html>
