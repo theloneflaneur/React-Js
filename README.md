@@ -1,6 +1,6 @@
 # Web Development 
 
-The repository consists of my projects relating to web development. I am skilled in HTML, CSS, JavaScript (including React.JS) and Flask (Python). 
+The repository consists of my projects relating to web development. I am skilled in HTML, CSS, JavaScript. I am currently learning React.JS, Flask and jQuery.
 
 
 
