@@ -9,7 +9,7 @@ The repository consists of my projects relating to web development. I am skilled
 Projects done so far : 
 
 
-1. Photowall/PhotoGram  : Using React.JS  ( Dec 2nd, 2020 )
+<h2> 1. Photowall/PhotoGram  : Using React.JS  ( Dec 2nd, 2020 ) </h2>
 
         - An instagram like web app to post pictures. 
         
@@ -23,7 +23,7 @@ Projects done so far :
         
         - Used React Router to navigate between the photoWall page and image upload page.
         
-2. EasyMoney : (COMMIT - 12-12-20) 
+<h2>2. EasyMoney : (COMMIT - 12-12-20) </h2>
 
          - A landing page with professional UI/UX experience
          
